@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
+    <title>WeatherApp - Error</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
-
 <body>
+    <div id="navbar"></div>
     <main class="grid min-h-full place-items-center bg-white py-24 px-6 sm:py-32 lg:px-8">
         <div class="text-center">
             <p class="text-base font-semibold text-indigo-600">404</p>
@@ -19,8 +21,11 @@
             </div>
         </div>
     </main>
-
-
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#navbar").load("navbar.html"); 
+        });
+    </script>
 </body>
 
 </html>
