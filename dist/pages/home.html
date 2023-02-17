@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>WeatherApp - Home</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body class="bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
+    <div class="color-change-2x">
+        <div id="navbar"></div>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#navbar").load("navbar.html");
+            });
+        </script>
+    </div>
+    </div>
+    <div class="box">
+        <div class="overflow-x-auto">
+            <table class="table w-full">
+
+                <thead>
+                    <tr>
+                        <th>Cloud Pct</th>
+                        <th>Temp</th>
+                        <th>Feels Like</th>
+                        <th>Humidity</th>
+                        <th>Min Temp</th>
+                        <th>Max Temp</th>
+                        <th>Wind speed</th>
+                        <th>Sunrise</th>
+                        <th>Sunset</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <th>1</th>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                    </tr>
+
+                    <tr>
+                        <th>2</th>
+                        <td>Hart Hagerty</td>
+                        <td>Desktop Support Technician</td>
+                        <td>Purple</td>
+                    </tr>
+
+                    <tr>
+                        <th>3</th>
+                        <td>Brice Swyre</td>
+                        <td>Tax Accountant</td>
+                        <td>Red</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

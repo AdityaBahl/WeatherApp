@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <title>WeatherApp - Forecast</title>
+    <script src="index.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
+
 <body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black">
     <div id="navbar"></div>
     <script type="text/javascript">
         $(document).ready(function() {
-            $("#navbar").load("navbar.html"); 
+            $("#navbar").load("navbar.html");
         });
     </script>
     <h1>Forecast</h1>
+
+    <div class="rounded-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-1 shadow-xl">
+        <a class="block rounded-xl bg-white p-6 sm:p-8">
+            <div class="mt-16 sm:pr-8">
+                <h3 class="text-xl font-bold text-gray-900">Cloud</h3>
+
+                <p class="text-sm text-gray-500">
+                    <span id="cloud_pct"></span>
+                    <span class="text-xs font-bold text-gray-600"></span>
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="rounded-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-1 shadow-xl">
+        <a class="block rounded-xl bg-white p-6 sm:p-8">
+            <div class="mt-16 sm:pr-8">
+                <h3 class="text-xl font-bold text-gray-900">Feels Like</h3>
+
+                <p class="text-sm text-gray-500">
+                    <span id="feels_like"></span>
+                    <span class="text-xs font-bold text-gray-600"></span>
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="rounded-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-1 shadow-xl">
+        <a class="block rounded-xl bg-white p-6 sm:p-8">
+            <div class="mt-16 sm:pr-8">
+                <h3 class="text-xl font-bold text-gray-900">Humidity</h3>
+
+                <p class="text-sm text-black-500">
+                    <span id="humidity"></span>
+                    <span class="text-xs font-bold text-gray-600"></span>
+                </p>
+            </div>
+        </a>
+    </div>
+
+    <div class="rounded-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-1 shadow-xl">
+        <a class="block rounded-xl bg-white p-6 sm:p-8">
+            <div class="mt-16 sm:pr-8">
+                <h3 class="text-xl font-bold text-gray-900">Temperature</h3>
+
+                <p class="text-sm text-gray-500">
+                    <span id="temp"></span>
+                    <span class="text-xs font-bold text-gray-600">
+                        <p>Min Temperature is:<span id="min_temp"></span></p>
+
+                <p>Max Temperature is:<span id="max_temp"></span></p>
+
+                </span>
+                <span class="text-xs font-bold text-gray-600"></span>
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="rounded-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-1 shadow-xl">
+        <a class="block rounded-xl bg-white p-6 sm:p-8">
+            <div class="mt-16 sm:pr-8">
+                <h3 class="text-xl font-bold text-gray-900">Wind Speed <span id="wind_speed"></span></h3>
+
+                <p class="text-sm text-gray-500">
+                    <span id="wind_speed"></span>
+                    <span class="text-xs font-bold text-gray-600"></span>
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="rounded-2xl bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600 p-1 shadow-xl">
+        <a class="block rounded-xl bg-white p-6 sm:p-8">
+            <div class="mt-16 sm:pr-8">
+                <h3 class="text-xl font-bold text-gray-900">Wind Degrees</h3>
+
+                <p class="text-sm text-gray-500">
+                    <span id="wind_degrees"></span>
+                    <span class="text-xs font-bold text-gray-600"></span>
+                </p>
+            </div>
+        </a>
+    </div>
 </body>
+
 </html>

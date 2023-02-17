@@ -1,0 +1,11 @@
+  cloud_pct=response. 
+    temp=response. 
+    feels_like=response. 
+    humidity=response. 
+    min_temp=response. 
+    max_temp=response. 
+    wind_speed=response. 
+    wind_degrees=response. 
+    sunrise=response. 
+    sunset=response. 
+  
