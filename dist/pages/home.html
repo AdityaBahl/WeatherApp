@@ -8,6 +8,7 @@
     <title>WeatherApp - Home</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
 </head>
 
 <body class="bg-gradient-to-r from-gray-700 via-gray-900 to-black">
@@ -19,49 +20,17 @@
             });
         </script>
     </div>
+    <div class="page_title" style="color:white; font-size:50px; text-align:center;">Weather App</div>
+    <model-viewer src="../model/scene.gltf" alt="A 3D model of a globe" shadow-intensity="1" camera-controls auto-rotate
+        ar style="width:100%; height:600px;"></model-viewer>
     </div>
-    <div class="box">
-        <div class="overflow-x-auto">
-            <table class="table w-full" style="color: white;">
-                <thead>
-                    <tr>
-                        <th>Cloud Pct</th>
-                        <th>Temp</th>
-                        <th>Feels Like</th>
-                        <th>Humidity</th>
-                        <th>Min Temp</th>
-                        <th>Max Temp</th>
-                        <th>Wind speed</th>
-                        <th>Sunrise</th>
-                        <th>Sunset</th>
-                    </tr>
-                </thead>
-                <tbody>
-
-                    <tr>
-                        <th>1</th>
-                        <td>Cy Ganderton</td>
-                        <td>Quality Control Specialist</td>
-                        <td>Blue</td>
-                    </tr>
-
-                    <tr>
-                        <th>2</th>
-                        <td>Hart Hagerty</td>
-                        <td>Desktop Support Technician</td>
-                        <td>Purple</td>
-                    </tr>
-
-                    <tr>
-                        <th>3</th>
-                        <td>Brice Swyre</td>
-                        <td>Tax Accountant</td>
-                        <td>Red</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+    </script>
+    <div class="page_content" style="color:white; font-size:20px; text-align:center;">
+        This Weather App is your One-stop solution for anything weather related.<br>
+        This project is a step towards a prettier web design for the traditional Weather Websites.
     </div>
 </body>
 
