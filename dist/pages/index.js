@@ -1,26 +1,26 @@
-const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '74ab579278msh20e9167de9f9b48p117f57jsn9a46c672cccf',
-        'X-RapidAPI-Host': 'weather-by-api-ninjas.p.rapidapi.com'
-    }
-};
+ const API_KEY = `14951c93f3d11e8ac8bed96dd90e8bc7`;
 
-fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Seattle', options)
-    .then(response => response.json())
-    .then(response => {
+ const searchTemperature = () => {
+     const city = document.getElementById('city-name').value;
+     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
+     fetch(url)
+         .then(res => res.json())
+         .then(data => displayTemperature(data));
+ }
+
+ const setInnerText = (id, text) => {
+     document.getElementById(id).innerText = text;
+ }
 
 
-        console.log(response)
+ const displayTemperature = temperature => {
+     console.log(temperature);
+     setInnerText('city', temperature.name);
+     setInnerText('temp', temperature.main.temp);
+     setInnerText('weather', temperature.weather[0].main);
 
-        cloud_pct.innerHtml = response.cloud_pct
-        temp.innerHtml = response.temp
-        feels_like.innerHtml = response.feels_like
-        humidity.innerHtml = response.humidity
-        min_temp.innerHtml = response.min_temp
-        max_temp.innerHtml = response.max_temp
-        wind_speed.innerHtml = response.wind_speed
-        wind_degrees.innerHtml = response.wind_degrees
 
-    })
-    .catch(err => console.error(err));
+     const url = ` http://openweathermap.org/img/wn/${temperature.weather[0].icon}@2x.png`;
+     const imgIcon = document.getElementById('image-icon');
+     imgIcon.setAttribute('src', url);
+ }
