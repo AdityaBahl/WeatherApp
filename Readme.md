@@ -38,7 +38,7 @@ Here are some of the methods and tools required to create a weather app:
 
 Weather API: A weather API is a critical component of a weather app. It provides the app with real-time weather data such as temperature, humidity, wind speed, and weather conditions for a specific location. Popular weather APIs include OpenWeatherMap, WeatherStack, and AccuWeather.
 
-3D Model: ![Earth Globe](https://sketchfab.com/3d-models/earth-globe-98d2b04d46474bafb4250cc75dc583b3)
+3D Model: [Earth Globe](https://sketchfab.com/3d-models/earth-globe-98d2b04d46474bafb4250cc75dc583b3)
 
 Programming Languages: To create a weather app, you'll need to use programming languages such as JavaScript, HTML, and CSS. JavaScript is particularly useful for creating interactive and dynamic user interfaces.
 
