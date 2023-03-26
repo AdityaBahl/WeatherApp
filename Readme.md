@@ -1,8 +1,12 @@
 # Weather App
 
+![Web capture_27-3-2023_02650_127 0 0 1](https://user-images.githubusercontent.com/90335449/227797971-16ac6ef5-5557-4dec-a0c0-46887fa47ded.jpeg)
+![Web capture_27-3-2023_02715_127 0 0 1](https://user-images.githubusercontent.com/90335449/227797981-912757d1-e5a8-412a-8d16-c130054a2873.jpeg)
+![Web capture_27-3-2023_02733_127 0 0 1](https://user-images.githubusercontent.com/90335449/227797988-425870f7-a3b5-434a-959d-c4029af0bc7b.jpeg)
+
 ## **PROBLEM STATEMENT:**
 
-Creating a Weather App integrated with Weather API.
+Creating a Weather App integrated with Weather API and a 3D Model of the Globe.
 
 ## **MOTIVATION:**
 
@@ -33,6 +37,8 @@ Overall, a weather app is a useful tool that can help users plan their activitie
 Here are some of the methods and tools required to create a weather app:
 
 Weather API: A weather API is a critical component of a weather app. It provides the app with real-time weather data such as temperature, humidity, wind speed, and weather conditions for a specific location. Popular weather APIs include OpenWeatherMap, WeatherStack, and AccuWeather.
+
+3D Model: ![Earth Globe](https://sketchfab.com/3d-models/earth-globe-98d2b04d46474bafb4250cc75dc583b3)
 
 Programming Languages: To create a weather app, you'll need to use programming languages such as JavaScript, HTML, and CSS. JavaScript is particularly useful for creating interactive and dynamic user interfaces.
 
