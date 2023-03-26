@@ -12,7 +12,7 @@ Secondly, weather APIs provide a wealth of weather-related data that can be used
 
 Additionally, weather apps are practical tools that can be used by a wide range of users, from individuals planning their daily activities to businesses making weather-related decisions. Integration with other apps such as calendars, travel apps, and outdoor activity planners can provide a more comprehensive and personalized user experience.
 
-## **WHY Weather app?**
+## **Why Weather app?**
 
 A weather app is a useful tool that provides users with up-to-date weather information for their current location or any location of their choice. Here are some reasons why a weather app can be a useful tool:
 
@@ -30,106 +30,80 @@ Overall, a weather app is a useful tool that can help users plan their activitie
 
 ## **METHODS AND TOOLS REQUIRED**
 
-This project was done using NLP (Natural Language Processing) techniques. Twitter receives over 500 million tweets per day, across the globe. Hence, our work is to retrieve the data and analyze it.
+Here are some of the methods and tools required to create a weather app:
 
-## **DEVELOPER ACCOUNT**
+Weather API: A weather API is a critical component of a weather app. It provides the app with real-time weather data such as temperature, humidity, wind speed, and weather conditions for a specific location. Popular weather APIs include OpenWeatherMap, WeatherStack, and AccuWeather.
 
-In order to fetch tweets through Twitter API, one needs to create a “TWITTER DEVELOPER ACCOUNT” from twitter developer portal and register an app through their twitter account.
-![image](https://user-images.githubusercontent.com/90335449/179509023-22cfbfba-c43c-4f31-b9e3-abf5b5c8bf67.png)
+Programming Languages: To create a weather app, you'll need to use programming languages such as JavaScript, HTML, and CSS. JavaScript is particularly useful for creating interactive and dynamic user interfaces.
 
-Once the app is created, open the ‘Keys and Tokens’ tab, and copy ‘API Key’, ‘API Secret’, ‘Access token’ and ‘Access Token Secret’.
-![image](https://user-images.githubusercontent.com/90335449/179509053-246a4466-0e2d-4b9f-a54f-7fbd5f008879.png)
+Development Frameworks: Development frameworks like React, Vue, or Angular can help you build the app's front-end components and provide you with a structure to build upon.
+
+Geolocation APIs: Geolocation APIs like Google Maps can help users find their current location and search for weather data for their current location.
+
+Data Visualization Libraries: Data visualization libraries like Chart.js or D3.js can help you display weather data in a visually appealing and easy-to-understand format.
+
+Cloud Services: Cloud services like Amazon Web Services or Microsoft Azure can be used to host the app and make it available to users worldwide.
+
+Design Tools: Tools like Figma, Sketch, or Adobe XD can help you design the app's user interface and ensure that it is visually appealing and easy to use.
+
+Overall, creating a weather app requires a combination of programming languages, development frameworks, APIs, cloud services, and design tools. It is essential to select the right tools to ensure that the app is functional, visually appealing, and easy to use.
 
 **I carried out the following steps for the project:**</br>
 
-1. Import libraries</br>
-2. Tweets mining</br>
-3. Data cleaning</br>
-4. Tweets processing</br>
-5. Data exploration</br>
-6. Sentimental Analysis</br>
-   ![image](https://user-images.githubusercontent.com/90335449/179509106-dc8aa6e2-dc40-49e2-83fd-611484869d84.png)
+Here are the steps required to create a weather app:
 
-## **IMPORTING LIBRARIES**
+Determine the App's Features: Define the features you want to include in the app. For example, you might want to include the current temperature, humidity, wind speed, and weather conditions. You may also want to include a five-day forecast, location search functionality, and push notifications for severe weather alerts.
 
-Python libraries like :-
+Choose a Weather API: Choose a reliable weather API that provides the necessary data for your app's features. Some popular weather APIs include OpenWeatherMap, WeatherStack, and AccuWeather.
 
-1. Tweepy :- for tweets mining
-2. Pandas :- for data cleaning/manipulation
-3. TextBlob :- for sentimental analysis
-4. MatPlotlib :- Data exploration
-5. WordCloud :- Data exploration
-6. Re :- Regular expression, it lets you check is a particular string matches a given expression
+Choose a Development Framework: Choose a development framework such as React, Vue, or Angular to create the app's front-end components. This will provide you with a structure to build upon and make it easier to create a responsive and user-friendly app.
 
-### **TWEETS MINING**
+Build the User Interface: Use HTML, CSS, and JavaScript to create the app's user interface. Use design tools like Figma, Sketch, or Adobe XD to design the user interface before implementing it.
 
-Authorize twitter API client.
+Integrate the Weather API: Integrate the weather API into the app to provide real-time weather data to the user. Use JavaScript to fetch the data and display it in the app's UI.
 
-We use this code to fetch tweets, and filter the retweets and links after authorization of Twitter API.
-![image](https://user-images.githubusercontent.com/90335449/179509143-89129b80-c12b-454f-b7b9-5b9c9374a3ce.png)
+Implement Location Services: Use geolocation APIs like Google Maps to implement location services in the app. This will allow users to search for weather data for their current location or any other location.
 
-I created a dataframe using pandas library.
+Data Visualization: Use data visualization libraries like Chart.js or D3.js to display weather data in a visually appealing and easy-to-understand format.
 
-### **DATA CLEANING AND TWEETS PROCESSING**
+Testing and Debugging: Test the app for bugs and fix any issues before launching it.
 
-Data cleaning is the process of fixing or removing incorrect, corrupted, incorrectly formatted, duplicate, or incomplete data within a dataset.
-The ultimate goal is to clean up the individual tweets.
-To remove the mentions, #, and emojis, I created a function cleanTxt(text) which uses re library.
-![image](https://user-images.githubusercontent.com/90335449/179509190-d95b51c3-2012-4d88-accc-637c915f2271.png)
+Deploy the App: Deploy the app to a cloud service like Amazon Web Services or Microsoft Azure to make it available to users worldwide.
 
-To make the cleaning more efficient, I converted all the tweets to lower case, removed the punctuation marks, or any irrelevant character and also removed stop words from the tokens, by using stop words library.
-Stop words are the commonly used words which are irrelevant in text analysis like I, am, you, are, etc.
-Additionally, I used a concept known as “Lemmatization”. This is a process of returning words to their “base” form. I implemented it using WordNetLemmatizer.
+Marketing and Promotion: Market and promote the app through social media, app stores, and other channels to increase its visibility and attract users.
 
-Note that, the more you clean your data, the more effective and accurate your result will be.
-
-### **DATA EXPLORATION**
-
-### **WORD CLOUD**
-
-It is a visual representation of text data, which is often used to depict keyword metadata.
-![image](https://user-images.githubusercontent.com/90335449/179509303-0c0bea02-ad77-4f8a-9ee9-968cb1025913.png)
-
-Using the WordCloud library, you can generate a Word Cloud based on the word frequency and superimpose these words on any image. In this case, I used a rectangular block and Matplotlib to display the image. The Word Cloud shows, words with higher frequency in bigger text size while “not-so” common words are in smaller text sizes.
-It can also be used to check whether our cleaning was successful or not, by taking a look at word cloud and seeing if the words make any sense or not.
-
-### **SENTIMENTAL ANALYSIS**
-
-For this analysis, I went with TextBlob. Text Blob analyzes sentences by giving each tweet a Subjectivity and polarity score. Based on the Polarity score, one can define which tweets were Positive, Negative, or Neutral.
-Polarity simply means emotions expressed in a sentence. Emotions are closely related to sentiments. The strength of a sentiment is typically linked to the intensity of certain emotions, e.g., joy and anger.
-Subjectivity, subjective sentence expresses some personal feelings, views, or beliefs. A subjective sentence may not express any sentiment.
-I created two columns of subjectivity and polarity in my dataframe.
-![image](https://user-images.githubusercontent.com/90335449/179509367-9736ec22-07c4-4eda-af12-1bf07181e7e1.png)
-
-A polarity score of < 0 is Negative, 0 is Neutral while>0 is Positive. I used the “apply” method on the “Polarity” column in my dataframe to return the respective sentiment category. And create a column “Analysis”.
-Now, subsequently analysis has been for all the positive/negative tweets or not.
-
-### **POLARITY AND SUBJECTIVITY GRAPH**
-
-![image](https://user-images.githubusercontent.com/90335449/179509400-3575b12d-0730-4a7b-888a-73f764b3231f.png)
-
-### **CALCULATING THE PERCENTAGE AND NUMBER OF POSITIVE, NEGATIVE, NEUTRAL TWEETS**
-
-![image](https://user-images.githubusercontent.com/90335449/179509415-bf1de545-d611-4a2c-823f-2e2e5211366e.png)
-
-### **DISTRIBUTION OF SENTIMENTS CATEGORY**
-
-![image](https://user-images.githubusercontent.com/90335449/179509446-7eb87bee-10c2-4b8f-852e-f13760a2c1d5.png)
+Overall, creating a weather app requires a combination of programming languages, development frameworks, APIs, and data visualization libraries. It is important to follow a structured approach and thoroughly test the app before launching it to ensure that it is functional and user-friendly.
 
 ### **PROJECT LIMITATIONS AND CHALLENGES**
 
-Insufficient or limited word coverage as many new words and their semantics must be updated in the lexical database.
-The accuracy of sentiment classification is also challenging task in sentimental analysis for example, words such as “love” and “hate” are on positive (+1) and negative (-1) scores in polarity. But there are in-between conjugations of words such as “not-so-bad” that can mean “neutral”.
-Also, people use irony and sarcasm in casual conversations and memes on social media. The act of expressing negative sentiment using backhanded compliments can make it difficult for sentimental analysis tools to detect the true context of what the response is actually implying.
+Like any project, creating a weather app has its limitations and challenges. Here are some potential limitations and challenges you may encounter:
+
+Data Accuracy: The accuracy of the weather data provided by the API can be a limitation. While most weather APIs are reliable, some may have limitations in their coverage or accuracy. It is important to thoroughly test the API and ensure that the data provided is accurate.
+
+API Costs: Some weather APIs have a cost associated with their use. This can limit the amount of data you can access or the number of requests you can make. It is important to choose an API that fits within your project budget.
+
+User Privacy: Implementing location services in the app can be a challenge due to user privacy concerns. It is important to provide users with clear information about how their location data will be used and obtain their consent before collecting any data.
+
+App Design: Designing a visually appealing and user-friendly app can be a challenge. It is important to use design tools and follow user experience (UX) best practices to create an app that is easy to use and navigate.
+
+App Performance: Loading large amounts of weather data can impact the app's performance, particularly on mobile devices with limited processing power and memory. It is important to optimize the app's code and data requests to ensure that it loads quickly and is responsive.
+
+Platform Compatibility: Ensuring that the app is compatible with different platforms, browsers, and devices can be a challenge. It is important to test the app on different platforms and devices to ensure that it works as intended.
+
+Competitiveness: The weather app market is competitive, with many established apps available to users. It is important to create a unique value proposition that differentiates your app from competitors and attracts users.
+
+Overall, creating a weather app requires careful planning, attention to detail, and a thorough understanding of the project's limitations and challenges. By addressing these challenges proactively, you can create a functional, user-friendly, and successful weather app.
 
 ## **Conclusion**
 
-I learned many new techniques and enjoyed the process. There were a lot of problems, but removing errors, yeah, that’s what we have to learn. The project may not give accurate results in some cases as mentioned above, and there are quite a few solutions too, I will definitely explore this domain further.
+Creating a weather app can be a challenging but rewarding project that requires careful planning, attention to detail, and the use of various tools and technologies. By addressing potential limitations and challenges, you can create a functional and user-friendly app that provides valuable weather data to users.
 
-## **REFERENCES**
+### MIT Licence
 
-1. https://www.ijcaonline.org/research/volume125/number3/dandrea-2015-ijca-905866.pdf
-2. https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis
-3. https://textblob.readthedocs.io/en/dev/_modules/textblob/en/sentiments.html
-4. https://www.geeksforgeeks.org/twitter-sentiment-analysis-using-python/
-5. https://towardsdatascience.com/step-by-step-twitter-sentiment-analysis-in-python-d6f650ade58d
+**Copyright (c) 2023 Aditya Bahl**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
